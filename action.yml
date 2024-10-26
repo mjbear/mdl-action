@@ -5,6 +5,9 @@ inputs:
   style-file:
     description: Style file for mdl to use
     required: false
+  directory:
+    description: Directory to run mdl against
+    required: false
 runs:
   using: docker
   image: Dockerfile
