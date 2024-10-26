@@ -10,6 +10,7 @@ runs:
   image: Dockerfile
   args:
     - ${{ inputs.style-file }}
+    - ${{ inputs.directory }}
 branding:
   icon: check-circle
   color: green
