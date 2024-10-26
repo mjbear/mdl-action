@@ -16,15 +16,31 @@ the repository.
 styles][2] to learn about markdownlint style files, and [`RULES.md`][3] for the
 individual rules.
 
+### `directory`
+
+**Optional** The path to run `mdl` against when linting markdown files.
+Defaults to current directory `.` if a directory is not specified.
+
 [2]: https://github.com/markdownlint/markdownlint/blob/master/docs/creating_styles.md
 [3]: https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md
 
 ## Example usage
 
+### with style-file
+
 ```yml
 uses: bewuethr/mdl-action@v1
 with:
   style-file: .github/workflows/style.rb
+```
+
+### with style-file and directory
+
+```yml
+uses: bewuethr/mdl-action@v1
+with:
+  style-file: .github/workflows/style.rb
+  directory: tests
 ```
 
 An example style file might look like this:
