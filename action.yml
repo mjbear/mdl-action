@@ -2,7 +2,7 @@ name: Run markdownlint (mdl)
 author: Benjamin Wuethrich
 description: Run Markdown linter with given style file
 inputs:
-  style-file:
+  style_file:
     description: Style file for mdl to use
     required: false
   directory:
@@ -12,7 +12,7 @@ runs:
   using: docker
   image: Dockerfile
   args:
-    - ${{ inputs.style-file }}
+    - ${{ inputs.style_file }}
     - ${{ inputs.directory }}
 branding:
   icon: check-circle
